@@ -5,9 +5,13 @@
 ## Q.A Challenge 20200715 – Testes da Página https://beta.coodesh.com/
 
 **Tester:** Abmael Souza
+
 **Ambiente:** Google Chrome 93 – Desktop 
+
 **Sistema operacional:** Windows 10 Pro 
+
 **Data de execução dos testes:** 14 e 15/10/2021
+
 
 ### A . Objetivo
 **Validar a página https://beta.coodesh.com/ nos seguintes aspectos:**
