@@ -2,14 +2,14 @@
 
 
 
-##Q.A Challenge 20200715 – Testes da Página https://beta.coodesh.com/
+## Q.A Challenge 20200715 – Testes da Página https://beta.coodesh.com/
 
 **Tester:** Abmael Souza
 **Ambiente:** Google Chrome 93 – Desktop 
 **Sistema operacional:** Windows 10 Pro 
 **Data de execução dos testes:** 14 e 15/10/2021
 
-###A . Objetivo
+### A . Objetivo
 **Validar a página https://beta.coodesh.com/ nos seguintes aspectos:**
 
 1- Se a página está carregando corretamente a home page;
@@ -19,12 +19,12 @@
 5- Por último, precisamos saber se o sistema de candidatar está funcionando e para isso é necessário clicar no botão Candidatar-se e revisar se abriu o modal corretamente.
 
 
-###B. Framework utilizado
+### B. Framework utilizado
     • Ghost Inpector (https://app.ghostinspector.com/)
     • Razões: rápido aprendizado, fácil manipulação de dados, geração de relatórios, foco em UI, não precisa ter conhecimento avançado em programação, documentação detalhada.
     • Pontos negativos: software pago, execução de testes lenta em relação ao Cucumber e Selenium, dificuldades com assertividades de pop ups. 
 
-###C. Ciclos, Cenários e Casos de Teste
+### C. Ciclos, Cenários e Casos de Teste
 
 **Ciclo 1 – Validar se a página está carregando corretamente a home page**
 
@@ -89,7 +89,7 @@ Cenário 2.3 – Validar o conteúdo da vaga e candidatura
     • Validar a exibição dos botões de Candidatura
     • Validar a modal de candidatura 
 
-###D.Resultados
+### D.Resultados
 
 	Como os testes foram feitos em um ambiente onde não houve mudanças de escopo do site, como novos artigos, novas vagas de trabalho, mudança de layout, etc., obtivemos resultados positivos para todos os casos de testes implementados. 
 	O tempo de implementação de tais testes foi menor caso utilizássemos utilizando Cumcumber ou Selenium, porém, o tempo de execução é relativamente maior que seus concorrentes, uma vez que é tudo é processado no servidor remoto da empresa administradora da Ghost Inspector, incluindo os vídeos.
