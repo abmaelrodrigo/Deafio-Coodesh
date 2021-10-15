@@ -1,0 +1,955 @@
+{
+    "autoRetry": true,
+    "browser": "chrome",
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": false,
+    "disallowInsecureCertificates": false,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": false,
+    "filters": [],
+    "finalDelay": 5000,
+    "globalStepDelay": 250,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": 10000,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": 15000,
+    "name": "Validar  o conteúdo e a candidatura ",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": "us-east-1",
+    "screenshotCompareEnabled": true,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/auth?rd=",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": "a[href=\"/auth/candidates/signin\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 0
+                },
+                "rootSequence": 0
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": "#email",
+            "command": "assign",
+            "value": "abrodrigo@email.ghostinspector.com",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 1
+                },
+                "rootSequence": 1
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": true,
+            "sequence": 2,
+            "target": "#password",
+            "command": "assign",
+            "value": "911072Ab#",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 2
+                },
+                "rootSequence": 2
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 3,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Entrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 3
+                },
+                "rootSequence": 3
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": "a[href=\"/vagas\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 4
+                },
+                "rootSequence": 4
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": "input[name=\"search\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 5
+                },
+                "rootSequence": 5
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": "input[name=\"search\"]",
+            "command": "assign",
+            "value": "Grupo MContigo",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 6
+                },
+                "rootSequence": 6
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": "input[name=\"location\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 7
+                },
+                "rootSequence": 7
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "target": "input[name=\"location\"]",
+            "command": "assign",
+            "value": "Remota",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 8
+                },
+                "rootSequence": 8
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Encontrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 9
+                },
+                "rootSequence": 9
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": [
+                {
+                    "selector": "xpath=//h1[contains(text(), \"Back-end Scala Developer teste\")]"
+                },
+                {
+                    "selector": "a[href=\"/vagas/backend-scala-developer-teste-121401744\"] > .p-4.card-body > .d-block.media > .media-body > .mb-2.media > .media-body > h1.h5.mb-1"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 10
+                },
+                "rootSequence": 10
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "target": "h1.h4",
+            "command": "assertTextPresent",
+            "value": "Back-end Scala Developer teste",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 11
+                },
+                "rootSequence": 11
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "target": "button[type=\"button\"].btn.btn-soft-primary",
+            "command": "assertTextPresent",
+            "value": "Candidatar-se",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 12
+                },
+                "rootSequence": 12
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 13,
+            "target": "figure.ie-wave-1-bottom > img",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 13
+                },
+                "rootSequence": 13
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 14,
+            "target": ".pt-5",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 14
+                },
+                "rootSequence": 14
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 15,
+            "target": "div.mb-4:nth-of-type(1) > h2.h5",
+            "command": "assertTextPresent",
+            "value": "Descrição",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 15
+                },
+                "rootSequence": 15
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 16,
+            "target": "div.mb-4:nth-of-type(3) > h2.h5",
+            "command": "assertTextPresent",
+            "value": "Habilidades",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 16
+                },
+                "rootSequence": 16
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 17,
+            "target": "div.mb-4:nth-of-type(5) > h2.h5",
+            "command": "assertTextPresent",
+            "value": "Requisitos",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 17
+                },
+                "rootSequence": 17
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 18,
+            "target": "div.mb-7:nth-of-type(6) > .list-unstyled.mb-0 > li.py-3:nth-of-type(1)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 18
+                },
+                "rootSequence": 18
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 19,
+            "target": "div.mb-4:nth-of-type(7) > h2.h5",
+            "command": "assertTextPresent",
+            "value": "Diferenciais",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 19
+                },
+                "rootSequence": 19
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 20,
+            "target": "div.mb-7:nth-of-type(8) > .list-unstyled.mb-0 > li.py-3:nth-of-type(1)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 20
+                },
+                "rootSequence": 20
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 21,
+            "target": "div.mb-4:nth-of-type(9) > h2.h5",
+            "command": "assertTextPresent",
+            "value": "Benefícios",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 21
+                },
+                "rootSequence": 21
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 22,
+            "target": "div.mb-7:nth-of-type(10) > .list-unstyled.mb-0 > li.py-3:nth-of-type(1) > .media > .text-secondary.media-body",
+            "command": "assertTextPresent",
+            "value": "100% remoto",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 22
+                },
+                "rootSequence": 22
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 23,
+            "target": "div.mb-4:nth-of-type(11) > h2.h5",
+            "command": "assertTextPresent",
+            "value": "Compartilhar",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 23
+                },
+                "rootSequence": 23
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 24,
+            "target": "div.mb-7:nth-of-type(12) > .list-unstyled.mb-0",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 24
+                },
+                "rootSequence": 24
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 25,
+            "target": ".d-inline > button[type=\"button\"].btn.btn-primary",
+            "command": "assertTextPresent",
+            "value": "Candidatar-se",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 25
+                },
+                "rootSequence": 25
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 26,
+            "target": "div:nth-of-type(2) > div > .mb-4",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 26
+                },
+                "rootSequence": 26
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 27,
+            "target": "div:nth-of-type(2) > div > .mb-7",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 27
+                },
+                "rootSequence": 27
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 28,
+            "target": "button[type=\"button\"].btn.btn-soft-primary",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 28
+                },
+                "rootSequence": 28
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 29,
+            "target": ".bg-light",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 29
+                },
+                "rootSequence": 29
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 30,
+            "target": "label[for=\"fullname\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 30
+                },
+                "rootSequence": 30
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 31,
+            "target": "label[for=\"email\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 31
+                },
+                "rootSequence": 31
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 32,
+            "target": "label[for=\"phone\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 32
+                },
+                "rootSequence": 32
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 33,
+            "target": "label[for=\"contact_preference\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 33
+                },
+                "rootSequence": 33
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 34,
+            "target": "label[for=\"contact_hour\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 34
+                },
+                "rootSequence": 34
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 35,
+            "target": "label[for=\"city\"] > .text-danger",
+            "command": "assertTextPresent",
+            "value": "*",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 35
+                },
+                "rootSequence": 35
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 36,
+            "target": "label[for=\"city\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 36
+                },
+                "rootSequence": 36
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 37,
+            "target": "label[for=\"other_cities\"]",
+            "command": "assertTextPresent",
+            "value": "Disponibilidade em mudar de cidade?",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 37
+                },
+                "rootSequence": 37
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 38,
+            "target": "label[for=\"contract_type\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 38
+                },
+                "rootSequence": 38
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 39,
+            "target": "div.form-group:nth-of-type(11) > label.form-label",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 39
+                },
+                "rootSequence": 39
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 40,
+            "target": "label[for=\"linkedin\"]",
+            "command": "assertTextPresent",
+            "value": "LinkedIn",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 40
+                },
+                "rootSequence": 40
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 41,
+            "target": "label[for=\"github\"]",
+            "command": "assertTextPresent",
+            "value": "Github ou Site Portfólio",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 41
+                },
+                "rootSequence": 41
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 42,
+            "target": "label[for=\"cv\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 42
+                },
+                "rootSequence": 42
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 43,
+            "target": "button[type=\"button\"].btn.btn-secondary",
+            "command": "assertTextPresent",
+            "value": "Arquivo .pdf do seu CV enxuto e objetivo",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 43
+                },
+                "rootSequence": 43
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 44,
+            "target": "label[for=\"privacy.gpdr\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 44
+                },
+                "rootSequence": 44
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 45,
+            "target": "#contact_hour",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 45
+                },
+                "rootSequence": 45
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 46,
+            "target": "label[for=\"privacy.gpdr\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 46
+                },
+                "rootSequence": 46
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 47,
+            "target": ".bg-light",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 47
+                },
+                "rootSequence": 47
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 48,
+            "target": "button[type=\"button\"].close > span:nth-of-type(1)",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 48
+                },
+                "rootSequence": 48
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 49,
+            "command": "screenshot",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61698bc6c6eacd73055e6eb9",
+                    "sequence": 49
+                },
+                "rootSequence": 49
+            },
+            "notes": ""
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": {
+        "width": 1280,
+        "height": 800
+    }
+}

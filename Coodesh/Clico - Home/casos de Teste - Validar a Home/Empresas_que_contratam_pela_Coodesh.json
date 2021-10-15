@@ -1,0 +1,127 @@
+{
+    "autoRetry": null,
+    "browser": null,
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": null,
+    "disallowInsecureCertificates": null,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": null,
+    "filters": [],
+    "finalDelay": null,
+    "globalStepDelay": null,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": null,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": null,
+    "name": "Empresas que contratam pela Coodesh",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": null,
+    "screenshotCompareEnabled": null,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": ".pt-0",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": ".mb-3 > h2",
+            "command": "assertTextPresent",
+            "value": "Empresas que contratam pela Coodesh"
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": ".slick-slide.slick-cloned > div > .js-slide.align-items-center.justify-content-center > a[href=\"/empresas/celcoin\"] > img[title=\"Celcoin\"].u-clients.m-1.img-fluid",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 3,
+            "target": "a[href=\"/empresas\"].btn-wide",
+            "command": "assertTextPresent",
+            "value": "Veja mais empresas"
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": "div.slick-slide:nth-of-type(11) > div > .js-slide.align-items-center.justify-content-center > a[href=\"/empresas/melhor-plano\"] > img[title=\"Melhor Plano\"].u-clients.m-1.img-fluid",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "command": "screenshot",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": [
+                {
+                    "selector": "//a[contains(text(), \"Veja mais empresas\")]"
+                },
+                {
+                    "selector": "a[href=\"/empresas\"].btn-wide"
+                }
+            ],
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "command": "screenshot",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": null
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": null
+}

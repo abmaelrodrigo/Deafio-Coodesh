@@ -1,0 +1,630 @@
+{
+    "autoRetry": true,
+    "browser": "chrome",
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": false,
+    "disallowInsecureCertificates": false,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": false,
+    "filters": [],
+    "finalDelay": 5000,
+    "globalStepDelay": 250,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": 10000,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": 15000,
+    "name": "Login - Criar usuário ",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": "us-east-1",
+    "screenshotCompareEnabled": true,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": "a[href=\"/auth\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 0
+                },
+                "rootSequence": 0
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": [
+                {
+                    "selector": "xpath=//a[contains(text(), \"Criar conta\")]"
+                },
+                {
+                    "selector": "a[href=\"/auth/candidates/signup\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 1
+                },
+                "rootSequence": 1
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": "#email",
+            "command": "assign",
+            "value": "abrodrigo@gmail.com",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 2
+                },
+                "rootSequence": 2
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": true,
+            "sequence": 3,
+            "target": "#password",
+            "command": "assign",
+            "value": "911072Abv#",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 3
+                },
+                "rootSequence": 3
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": "#displayName",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 4
+                },
+                "rootSequence": 4
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": "#displayName",
+            "command": "assign",
+            "value": "Abmael",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 5
+                },
+                "rootSequence": 5
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": ".m-auto",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 6
+                },
+                "rootSequence": 6
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": "#email",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 7
+                },
+                "rootSequence": 7
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "target": "#email",
+            "command": "assign",
+            "value": "abrodrigo.com",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 8
+                },
+                "rootSequence": 8
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": "label[for=\"privacy.gpdr\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 9
+                },
+                "rootSequence": 9
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Inscreva-se\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 10
+                },
+                "rootSequence": 10
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "command": "screenshot",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 11
+                },
+                "rootSequence": 11
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "target": "#password",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 12
+                },
+                "rootSequence": 12
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": true,
+            "sequence": 13,
+            "target": "#password",
+            "command": "assign",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 13
+                },
+                "rootSequence": 13
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 14,
+            "target": "#email",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 14
+                },
+                "rootSequence": 14
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 15,
+            "target": "#email",
+            "command": "assign",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 15
+                },
+                "rootSequence": 15
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 16,
+            "target": "#displayName",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 16
+                },
+                "rootSequence": 16
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 17,
+            "target": "#displayName",
+            "command": "assign",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 17
+                },
+                "rootSequence": 17
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 18,
+            "target": ".space-bottom-3",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 18
+                },
+                "rootSequence": 18
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 19,
+            "command": "screenshot",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 19
+                },
+                "rootSequence": 19
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 20,
+            "target": "#displayName",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 20
+                },
+                "rootSequence": 20
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 21,
+            "command": "store",
+            "target": "",
+            "value": "{{name.firstName}}",
+            "variableName": "name",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 21
+                },
+                "rootSequence": 21
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 22,
+            "target": "#displayName",
+            "command": "assign",
+            "value": "{{name}}",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 22
+                },
+                "rootSequence": 22
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 23,
+            "target": ".align-items-center.position-relative",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 23
+                },
+                "rootSequence": 23
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 24,
+            "target": "#email",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 24
+                },
+                "rootSequence": 24
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 25,
+            "command": "store",
+            "target": "",
+            "value": "{{name.firstName}}@email.ghostinspector.com",
+            "variableName": "email",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 25
+                },
+                "rootSequence": 25
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 26,
+            "target": "#email",
+            "command": "assign",
+            "value": "{{email}}",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 26
+                },
+                "rootSequence": 26
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": true,
+            "sequence": 27,
+            "target": "#password",
+            "command": "assign",
+            "value": "911072Abv#",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 27
+                },
+                "rootSequence": 27
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 28,
+            "target": "xpath=//*[@id=\"privacy.gpdr\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 28
+                },
+                "rootSequence": 28
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 29,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Inscreva-se\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 29
+                },
+                "rootSequence": 29
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 30,
+            "command": "pause",
+            "target": "",
+            "value": "5000",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 30
+                },
+                "rootSequence": 30
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 31,
+            "target": "div.fade.tab-pane:nth-of-type(1) > .space-bottom-2.container > div > .mb-3 > h2.h5.mb-0",
+            "command": "assertTextPresent",
+            "value": "Editar Perfil",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616975bdc6eacd73055798c9",
+                    "sequence": 31
+                },
+                "rootSequence": 31
+            },
+            "notes": ""
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": {
+        "width": 1280,
+        "height": 800
+    }
+}

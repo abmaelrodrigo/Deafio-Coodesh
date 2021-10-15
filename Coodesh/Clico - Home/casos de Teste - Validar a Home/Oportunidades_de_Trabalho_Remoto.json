@@ -1,0 +1,168 @@
+{
+    "autoRetry": null,
+    "browser": null,
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": null,
+    "disallowInsecureCertificates": null,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": null,
+    "filters": [],
+    "finalDelay": null,
+    "globalStepDelay": null,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": null,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": null,
+    "name": "Oportunidades de Trabalho Remoto",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": null,
+    "screenshotCompareEnabled": null,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": "#content > div.container:nth-of-type(3)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": "div.container:nth-of-type(3) > .text-center.mb-9 > h2",
+            "command": "assertTextPresent",
+            "value": "Oportunidades de Trabalho Remoto",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": "div.container:nth-of-type(3) > .text-center.mb-9 > p",
+            "command": "assertTextPresent",
+            "value": "Conecte-se com as melhores startup tech. Receba feedback e mentoria de carreira na velocidade da luz.",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 3,
+            "target": "div.d-block.card-deck:nth-of-type(2) > div.mb-3.card:nth-of-type(1) > .card-body",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": ".text-center.space-1",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": "a[href=\"/desenvolvedores\"].btn",
+            "command": "assertTextPresent",
+            "value": "QUERO NOVOS DESAFIOS",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": ".container > div.d-block.card-deck:nth-of-type(2)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": ".container > div.d-block.card-deck:nth-of-type(3)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "target": ".container > div.d-block.card-deck:nth-of-type(4)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": [
+                {
+                    "selector": "xpath=//a[contains(text(), \"QUERO NOVOS DESAFIOS\")]"
+                },
+                {
+                    "selector": "a[href=\"/desenvolvedores\"].btn"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "command": "screenshot",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": null
+}

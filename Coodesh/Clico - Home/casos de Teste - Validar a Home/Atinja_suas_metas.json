@@ -1,0 +1,83 @@
+{
+    "autoRetry": null,
+    "browser": null,
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": null,
+    "disallowInsecureCertificates": null,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": null,
+    "filters": [],
+    "finalDelay": null,
+    "globalStepDelay": null,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": null,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": null,
+    "name": "Atinja suas metas",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": null,
+    "screenshotCompareEnabled": null,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": ".row > .z-index-2",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": "h1.display-5",
+            "command": "assertTextPresent",
+            "value": "Atinja suas metas de contratações e monte squads mais eficientes"
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": "a[href=\"/contrate-desenvolvedores\"].btn-wide",
+            "command": "assertTextPresent",
+            "value": "QUERO CONTRATAR"
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 3,
+            "target": [
+                {
+                    "selector": "//a[contains(text(), \"QUERO CONTRATAR\")]"
+                },
+                {
+                    "selector": "a[href=\"/contrate-desenvolvedores\"].btn-wide"
+                }
+            ],
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "command": "screenshot",
+            "value": null
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": null
+}

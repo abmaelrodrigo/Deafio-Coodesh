@@ -1,0 +1,816 @@
+{
+    "autoRetry": true,
+    "browser": "chrome",
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": false,
+    "disallowInsecureCertificates": false,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": false,
+    "filters": [],
+    "finalDelay": 5000,
+    "globalStepDelay": 250,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": 10000,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": 15000,
+    "name": "Pesquisar por vagas",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": "us-east-1",
+    "screenshotCompareEnabled": true,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": "a[href=\"/auth\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 0
+                },
+                "rootSequence": 0
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": "a[href=\"/auth/candidates/signin\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 1
+                },
+                "rootSequence": 1
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": "#email",
+            "command": "assign",
+            "value": "abrodrigo@email.ghostinspector.com",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 2
+                },
+                "rootSequence": 2
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": true,
+            "sequence": 3,
+            "target": "#password",
+            "command": "assign",
+            "value": "911072Ab#",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 3
+                },
+                "rootSequence": 3
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Entrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 4
+                },
+                "rootSequence": 4
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": "a[href=\"/vagas\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 5
+                },
+                "rootSequence": 5
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": "input[name=\"search\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 6
+                },
+                "rootSequence": 6
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": "input[name=\"search\"]",
+            "command": "assign",
+            "value": "3423",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 7
+                },
+                "rootSequence": 7
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Encontrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 8
+                },
+                "rootSequence": 8
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": ".container > h1",
+            "command": "assertTextPresent",
+            "value": "Não encontrado",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 9
+                },
+                "rootSequence": 9
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": "input[name=\"search\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 10
+                },
+                "rootSequence": 10
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "target": "input[name=\"search\"]",
+            "command": "assign",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 11
+                },
+                "rootSequence": 11
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "target": "input[name=\"location\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 12
+                },
+                "rootSequence": 12
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 13,
+            "target": "input[name=\"location\"]",
+            "command": "assign",
+            "value": "Romenia",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 13
+                },
+                "rootSequence": 13
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 14,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Encontrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 14
+                },
+                "rootSequence": 14
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 15,
+            "target": ".container > h1",
+            "command": "assertTextPresent",
+            "value": "Não encontrado",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 15
+                },
+                "rootSequence": 15
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 16,
+            "target": "input[name=\"location\"]",
+            "command": "dragAndDrop",
+            "value": "div.mb-4:nth-of-type(2) > div:nth-of-type(2) > .input-group",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 16
+                },
+                "rootSequence": 16
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 17,
+            "target": "input[name=\"location\"]",
+            "command": "assign",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 17
+                },
+                "rootSequence": 17
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 18,
+            "target": "input[name=\"search\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 18
+                },
+                "rootSequence": 18
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 19,
+            "target": "input[name=\"search\"]",
+            "command": "assign",
+            "value": "developer",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 19
+                },
+                "rootSequence": 19
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 20,
+            "target": "input[name=\"location\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 20
+                },
+                "rootSequence": 20
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 21,
+            "target": "input[name=\"location\"]",
+            "command": "assign",
+            "value": "remoto",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 21
+                },
+                "rootSequence": 21
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 22,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Encontrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 22
+                },
+                "rootSequence": 22
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 23,
+            "target": [
+                {
+                    "selector": "xpath=//h1[contains(text(), \"Back-end Scala Developer teste\")]"
+                },
+                {
+                    "selector": "a[href=\"/vagas/backend-scala-developer-teste-121401744\"] > .p-4.card-body > .d-block.media > .media-body > .mb-2.media > .media-body > h1.h5.mb-1"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 23
+                },
+                "rootSequence": 23
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 24,
+            "command": "screenshot",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 24
+                },
+                "rootSequence": 24
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 25,
+            "target": "a[href=\"/vagas\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 25
+                },
+                "rootSequence": 25
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 26,
+            "target": "input[name=\"search\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 26
+                },
+                "rootSequence": 26
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 27,
+            "target": "input[name=\"search\"]",
+            "command": "assign",
+            "value": "PiedPiper",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 27
+                },
+                "rootSequence": 27
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 28,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Encontrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 28
+                },
+                "rootSequence": 28
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 29,
+            "target": "a[href=\"/vagas/fullstack-developer-221720870\"] > .p-4.card-body",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 29
+                },
+                "rootSequence": 29
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 30,
+            "target": "a[href=\"/vagas/frontend-react-203704147\"] > .p-4.card-body",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 30
+                },
+                "rootSequence": 30
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 31,
+            "target": "a[href=\"/vagas/backend-scala-developer-201137062\"] > .p-4.card-body",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 31
+                },
+                "rootSequence": 31
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 32,
+            "target": "li.list-inline-item.mb-2:nth-of-type(1) > .dropdown > button[type=\"button\"].dropdown-toggle.btn.btn-soft-primary",
+            "command": "assertTextPresent",
+            "value": "Categoria",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 32
+                },
+                "rootSequence": 32
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 33,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Categoria\")]"
+                },
+                {
+                    "selector": "li.list-inline-item.mb-2:nth-of-type(1) > .dropdown > button[type=\"button\"].dropdown-toggle.btn.btn-soft-primary"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 33
+                },
+                "rootSequence": 33
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 34,
+            "target": [
+                {
+                    "selector": "xpath=//a[contains(text(), \"Back-End\")]"
+                },
+                {
+                    "selector": "div:nth-of-type(2) > a[href=\"#\"].px-0.dropdown-item:nth-of-type(1)"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 34
+                },
+                "rootSequence": 34
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 35,
+            "command": "pause",
+            "target": "",
+            "value": "2000",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 35
+                },
+                "rootSequence": 35
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 36,
+            "target": "li.list-inline-item.mb-2:nth-of-type(2) > .dropdown > button[type=\"button\"].dropdown-toggle.btn.btn-soft-primary",
+            "command": "assertTextPresent",
+            "value": "Nível",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 36
+                },
+                "rootSequence": 36
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 37,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Nível\")]"
+                },
+                {
+                    "selector": "li.list-inline-item.mb-2:nth-of-type(2) > .dropdown > button[type=\"button\"].dropdown-toggle.btn.btn-soft-primary"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 37
+                },
+                "rootSequence": 37
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 38,
+            "target": "div:nth-of-type(2) > a[href=\"#\"].px-0.dropdown-item:nth-of-type(3)",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 38
+                },
+                "rootSequence": 38
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 39,
+            "command": "screenshot",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "616985af62f56c3d67a7ae90",
+                    "sequence": 39
+                },
+                "rootSequence": 39
+            },
+            "notes": ""
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": {
+        "width": 1280,
+        "height": 800
+    }
+}

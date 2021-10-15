@@ -1,0 +1,317 @@
+{
+    "autoRetry": null,
+    "browser": null,
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": null,
+    "disallowInsecureCertificates": null,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": null,
+    "filters": [],
+    "finalDelay": null,
+    "globalStepDelay": null,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": null,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": null,
+    "name": "Header",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": null,
+    "screenshotCompareEnabled": null,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": "#header-nav-bar",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": ".u-header__navbar-brand-center",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": "a[href=\"/desenvolvedores\"].nav-link",
+            "command": "assertTextPresent",
+            "value": "Sou Developer",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 3,
+            "target": "a[href=\"/contrate-desenvolvedores\"].nav-link",
+            "command": "assertTextPresent",
+            "value": "Contrate Developers",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": "a[href=\"/ats\"].nav-link",
+            "command": "assertTextPresent",
+            "value": "Divulgar Vagas",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": "a[href=\"https://coodesh.com/blog\"].nav-link",
+            "command": "assertTextPresent",
+            "value": "Dicas",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": "a[href=\"/auth\"].nav-link",
+            "command": "assertTextPresent",
+            "value": "Login",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": "a[href=\"/contato\"].nav-link",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "target": [
+                {
+                    "selector": "xpath=//a[contains(text(), \"Sou Developer\")]"
+                },
+                {
+                    "selector": "a[href=\"/desenvolvedores\"].nav-link"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": [
+                {
+                    "selector": "xpath=//a[contains(text(), \"Contrate Developers\")]"
+                },
+                {
+                    "selector": "a[href=\"/contrate-desenvolvedores\"].nav-link"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": "a[href=\"/ats\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "target": [
+                {
+                    "selector": "xpath=//a[contains(text(), \"Dicas\")]"
+                },
+                {
+                    "selector": "a[href=\"https://coodesh.com/blog\"].nav-link"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "command": "open",
+            "target": "",
+            "value": "https://beta.coodesh.com/",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 13,
+            "target": "a[href=\"/auth\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 14,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Solicitar Proposta\")]"
+                },
+                {
+                    "selector": "button[type=\"button\"].btn.btn-primary"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 15,
+            "target": "#content > .space-2.container",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 16,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 17,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Solicitar Proposta\")]"
+                },
+                {
+                    "selector": "button[type=\"button\"].btn.btn-primary"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 18,
+            "target": "a[href=\"/auth\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 19,
+            "target": ".u-ver-divider > .text-center",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 20,
+            "target": "a[href=\"/auth/candidates/signin\"]",
+            "command": "assertTextPresent",
+            "value": "Entrar",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 21,
+            "target": "a[href=\"/auth/candidates/signup\"]",
+            "command": "assertTextPresent",
+            "value": "Criar conta",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 22,
+            "target": ".m-auto > .text-center",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 23,
+            "target": "a[href=\"/auth/companies/signin\"]",
+            "command": "assertTextPresent",
+            "value": "Entrar",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 24,
+            "target": "a[href=\"/auth/companies/signup\"]",
+            "command": "assertTextPresent",
+            "value": "Faça parte",
+            "variableName": ""
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": null
+}

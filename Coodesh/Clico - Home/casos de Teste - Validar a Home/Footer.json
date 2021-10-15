@@ -1,0 +1,435 @@
+{
+    "autoRetry": null,
+    "browser": null,
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": null,
+    "disallowInsecureCertificates": null,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": null,
+    "filters": [],
+    "finalDelay": null,
+    "globalStepDelay": null,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": null,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": null,
+    "name": "Footer",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": null,
+    "screenshotCompareEnabled": null,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": "footer.border-top > .space-2.container",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": "div > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": ".small",
+            "command": "assertTextPresent",
+            "value": "© Coodesh 2021. Todos os direitos reservados.",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 3,
+            "target": "div.mb-4:nth-of-type(2) > .list-inline.mb-0",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": ".align-items-center.justify-content-around--",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": ".row > div.mb-4:nth-of-type(1)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": "div.mb-4:nth-of-type(1) > h4.h6",
+            "command": "assertTextPresent",
+            "value": "Coodesh",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": "div.mb-4:nth-of-type(1) > .list-group-flush.list-group-borderless.mb-0.list-group > div.list-group-item-action.list-group-item-action.list-group-item:nth-of-type(1)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "target": "div.mb-4:nth-of-type(2) > h4.h6",
+            "command": "assertTextPresent",
+            "value": "Para Empresas",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": "div.mb-4:nth-of-type(2) > .list-group-flush.list-group-borderless.mb-0.list-group > div.list-group-item-action.list-group-item:nth-of-type(1)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": "div.mb-4:nth-of-type(3) > h4.h6",
+            "command": "assertTextPresent",
+            "value": "Para Developers",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "target": "div.mb-4:nth-of-type(3) > .list-group-flush.list-group-borderless.mb-0.list-group > div.list-group-item-action.list-group-item:nth-of-type(1)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "target": "div.mb-4:nth-of-type(4) > h4.h6",
+            "command": "assertTextPresent",
+            "value": "Links Úteis",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 13,
+            "target": "div.mb-4:nth-of-type(4) > .list-group-flush.list-group-borderless.mb-0.list-group > div.list-group-item-action.list-group-item:nth-of-type(1)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 14,
+            "target": "a[href=\"https://www.linkedin.com/company/coodesh\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 15,
+            "command": "eval",
+            "target": "",
+            "value": "return window.location.href === 'https://www.linkedin.com/company/coodesh'",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 16,
+            "command": "open",
+            "target": "",
+            "value": "https://beta.coodesh.com/",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 17,
+            "target": "a[href=\"https://www.instagram.com/coodeshbr\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 18,
+            "command": "eval",
+            "target": "",
+            "value": "return window.location.href === 'https://www.instagram.com/coodeshbr/'",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 19,
+            "command": "open",
+            "target": "",
+            "value": "https://beta.coodesh.com/",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 20,
+            "target": "a[href=\"https://www.facebook.com/coodesh\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 21,
+            "command": "eval",
+            "target": "",
+            "value": "return window.location.href === 'https://www.facebook.com/coodesh'",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 22,
+            "command": "open",
+            "target": "",
+            "value": "https://beta.coodesh.com/",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 23,
+            "target": "a[href=\"https://github.com/coodesh\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 24,
+            "command": "eval",
+            "target": "",
+            "value": "return window.location.href === 'https://github.com/coodesh'",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 25,
+            "command": "open",
+            "target": "",
+            "value": "https://beta.coodesh.com/",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 26,
+            "target": [
+                {
+                    "selector": "//a[contains(text(), \"Quem Somos\")]"
+                },
+                {
+                    "selector": "a[href=\"/sobre\"]"
+                }
+            ],
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 27,
+            "command": "screenshot",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 28,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 29,
+            "target": ".list-group-item-action > a[href=\"/auth\"].u-header__nav-link",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 30,
+            "command": "screenshot",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 31,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 32,
+            "target": [
+                {
+                    "selector": "//a[contains(text(), \"Como Funciona\")]"
+                },
+                {
+                    "selector": ".list-group-item-action > a[href=\"/desenvolvedores\"].u-header__nav-link"
+                }
+            ],
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 33,
+            "command": "screenshot",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 34,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 35,
+            "target": [
+                {
+                    "selector": "//a[contains(text(), \"Termos e Condições\")]"
+                },
+                {
+                    "selector": "a[href=\"/termos\"]"
+                }
+            ],
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 36,
+            "command": "screenshot",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 37,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 38,
+            "target": ".fas.u-go-to__inner",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 39,
+            "target": "#header-nav-bar",
+            "command": "assertElementPresent",
+            "value": ""
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": null
+}

@@ -1,0 +1,175 @@
+{
+    "autoRetry": null,
+    "browser": null,
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": null,
+    "disallowInsecureCertificates": null,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": null,
+    "filters": [],
+    "finalDelay": null,
+    "globalStepDelay": null,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": null,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": null,
+    "name": "Leia nossas últimas novidades",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": null,
+    "screenshotCompareEnabled": null,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": ".space-2 > .text-center.mb-9",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": ".space-2 > .text-center.mb-9",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": ".space-2 > .text-center.mb-9 > h2",
+            "command": "assertTextPresent",
+            "value": "Leia nossas últimas novidades"
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 3,
+            "target": ".space-2 > .text-center.mb-9 > p",
+            "command": "assertTextPresent",
+            "value": "Estamos compartilhando dicas incríveis de carreiras, contratação e ferramentas para RH."
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": ".u-slick--equal-height.u-slick--gutters-3",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": ".u-slick--equal-height.u-slick--gutters-3 > .slick-list.draggable > .slick-track",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": ".u-slick--equal-height.u-slick--gutters-3 > .slick-list.draggable > .slick-track",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": ".u-slick--equal-height > div.d-none.u-slick__arrow.rounded-circle.fas.js-prev.slick-arrow:nth-of-type(3)",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "target": ".u-slick--equal-height > div.d-none.u-slick__arrow.rounded-circle.fas.js-prev.slick-arrow:nth-of-type(1)",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": "li:nth-of-type(1) > span",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": ".dotsClass > li:nth-of-type(2)",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "target": "li:nth-of-type(2) > span",
+            "command": "assertElementPresent",
+            "value": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "target": ".u-slick--equal-height > div.d-none.u-slick__arrow.rounded-circle.fas.js-prev.slick-arrow:nth-of-type(3)",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 13,
+            "target": ".u-slick--equal-height > div.d-none.u-slick__arrow.rounded-circle.fas.js-prev.slick-arrow:nth-of-type(1)",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 14,
+            "target": "a[href=\"https://coodesh.com/blog/pessoas-candidatas/carreiras/mobile-flutter/\"] > .position-relative > .position-absolute.z-index-2",
+            "command": "click",
+            "value": null
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 15,
+            "command": "screenshot",
+            "value": null
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": null
+}

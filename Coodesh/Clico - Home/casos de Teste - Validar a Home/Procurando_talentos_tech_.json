@@ -1,0 +1,180 @@
+{
+    "autoRetry": null,
+    "browser": null,
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": null,
+    "disallowInsecureCertificates": null,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": null,
+    "filters": [],
+    "finalDelay": null,
+    "globalStepDelay": null,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": null,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": null,
+    "name": "Procurando talentos tech?",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": null,
+    "screenshotCompareEnabled": null,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": "#content > div.container:nth-of-type(4)",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": "div.container:nth-of-type(4) > .text-center.mb-9 > h2",
+            "command": "assertTextPresent",
+            "value": "Procurando talentos tech?",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": "div.container:nth-of-type(4) > .text-center.mb-9 > p",
+            "command": "assertTextPresent",
+            "value": "Contrate desenvolvedores para as necessidades e cultura da sua startup",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 3,
+            "target": ".border-0.shadow.p-6.card.bg-primary",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": ".border-0.shadow.p-6.card.bg-warning",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": "a[href=\"/contrate-desenvolvedores\"] > button[type=\"button\"].btn.btn-white",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": "a[href=\"/ats\"] > button[type=\"button\"].btn.btn-white",
+            "command": "assertElementPresent",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": "a[href=\"/contrate-desenvolvedores\"] > button[type=\"button\"].btn.btn-white",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "command": "assertEval",
+            "target": "",
+            "value": "return window.location.href === 'https://beta.coodesh.com/contrate-desenvolvedores'",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "command": "screenshot",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "target": "a[href=\"/ats\"] > button[type=\"button\"].btn.btn-white",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "command": "assertEval",
+            "target": "",
+            "value": "return window.location.href === 'https://beta.coodesh.com/ats'",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 13,
+            "command": "screenshot",
+            "value": "",
+            "variableName": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 14,
+            "target": "figure.max-width-20 > img[title=\"Coodesh: Avalie habilidades de programação com desafios do mundo real\"]",
+            "command": "click",
+            "value": "",
+            "variableName": ""
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": null
+}

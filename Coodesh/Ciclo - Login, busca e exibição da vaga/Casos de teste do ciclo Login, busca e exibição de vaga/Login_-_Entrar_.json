@@ -1,0 +1,469 @@
+{
+    "autoRetry": true,
+    "browser": "chrome",
+    "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+    "dataSource": null,
+    "disableVisuals": false,
+    "disallowInsecureCertificates": false,
+    "extensionVersion": "6.1.0",
+    "failOnJavaScriptError": false,
+    "filters": [],
+    "finalDelay": 5000,
+    "globalStepDelay": 250,
+    "httpHeaders": [],
+    "importOnly": false,
+    "language": null,
+    "links": [],
+    "maxAjaxDelay": 10000,
+    "maxConcurrentDataRows": null,
+    "maxWaitDelay": 15000,
+    "name": "Login - Entrar ",
+    "notifications": null,
+    "publicStatusEnabled": false,
+    "region": "us-east-1",
+    "screenshotCompareEnabled": true,
+    "screenshotCompareThreshold": 0.1,
+    "startUrl": "https://beta.coodesh.com/",
+    "steps": [
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 0,
+            "target": "a[href=\"/auth\"].nav-link",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 0
+                },
+                "rootSequence": 0
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 1,
+            "target": "a[href=\"/auth/candidates/signin\"]",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 1
+                },
+                "rootSequence": 1
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 2,
+            "target": "#email",
+            "command": "assign",
+            "value": "abrodrigo@gmail.com",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 2
+                },
+                "rootSequence": 2
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": true,
+            "sequence": 3,
+            "target": "#password",
+            "command": "assign",
+            "value": "911072Abv#",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 3
+                },
+                "rootSequence": 3
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 4,
+            "target": "#email",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 4
+                },
+                "rootSequence": 4
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 5,
+            "target": "#email",
+            "command": "assign",
+            "value": "abrodrigo@",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 5
+                },
+                "rootSequence": 5
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 6,
+            "target": "form.mt-5",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 6
+                },
+                "rootSequence": 6
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 7,
+            "target": "div.form-group:nth-of-type(1) > div",
+            "command": "assertTextPresent",
+            "value": "Email deve ser um email válido",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 7
+                },
+                "rootSequence": 7
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 8,
+            "target": "#email",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 8
+                },
+                "rootSequence": 8
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 9,
+            "target": "#email",
+            "command": "assign",
+            "value": "abrodrigo@outlook.br",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 9
+                },
+                "rootSequence": 9
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 10,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Entrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 10
+                },
+                "rootSequence": 10
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 11,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Entrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 11
+                },
+                "rootSequence": 11
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 12,
+            "target": ".rrt-middle-container",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 12
+                },
+                "rootSequence": 12
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 13,
+            "target": ".rrt-middle-container",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 13
+                },
+                "rootSequence": 13
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 14,
+            "target": "#email",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 14
+                },
+                "rootSequence": 14
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 15,
+            "target": "#email",
+            "command": "dragAndDrop",
+            "value": "form.mt-5 > div.form-group:nth-of-type(1)",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 15
+                },
+                "rootSequence": 15
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 16,
+            "target": "#email",
+            "command": "assign",
+            "value": "abrodrigo@email.ghostinspector.com",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 16
+                },
+                "rootSequence": 16
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 17,
+            "target": "#password",
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 17
+                },
+                "rootSequence": 17
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": true,
+            "sequence": 18,
+            "target": "#password",
+            "command": "assign",
+            "value": "911072Ab#",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 18
+                },
+                "rootSequence": 18
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 19,
+            "target": [
+                {
+                    "selector": "xpath=//button[contains(text(), \"Entrar\")]"
+                },
+                {
+                    "selector": "button[type=\"submit\"]"
+                }
+            ],
+            "command": "click",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 19
+                },
+                "rootSequence": 19
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 20,
+            "command": "pause",
+            "target": "",
+            "value": "2000",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 20
+                },
+                "rootSequence": 20
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 21,
+            "command": "screenshot",
+            "value": "",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 21
+                },
+                "rootSequence": 21
+            },
+            "notes": ""
+        },
+        {
+            "condition": null,
+            "optional": false,
+            "private": false,
+            "sequence": 22,
+            "target": "a[href=\"/vagas\"].nav-link",
+            "command": "assertTextPresent",
+            "value": "Ver Vagas",
+            "variableName": "",
+            "extra": {
+                "source": {
+                    "test": "61697dff62f56c3d67a5616a",
+                    "sequence": 22
+                },
+                "rootSequence": 22
+            },
+            "notes": ""
+        }
+    ],
+    "testFrequency": 0,
+    "testFrequencyAdvanced": [],
+    "viewportSize": {
+        "width": 1280,
+        "height": 800
+    }
+}
