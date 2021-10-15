@@ -101,4 +101,4 @@ Cenário 2.3 – Validar o conteúdo da vaga e candidatura
 	Por fim, em relação aos testes não funcionais, percebe-se que o site beta da Coodesh possui uma interface simples e intuitiva, que ajuda o usuário a entender o objetivo do site e como interagir com o mesmo. Isso acaba sendo refletido na facilidade que encontrei para testá-lo.
 
 
-Todos os resultados e vídeos podem ser encontrados neste repositório. O Ghost Inspector permitiu a exportação dos casos de teste em formato JSON. Para que o time tenha acesso ao ambiente de eecução de testes seria necessário ter o e-mail de cada membro da equipe. 
+** **Todos os resultados e vídeos podem ser encontrados neste repositório. O Ghost Inspector permitiu a exportação dos casos de teste em formato JSON. Para que o time tenha acesso ao ambiente de eecução de testes seria necessário ter o e-mail de cada membro da equipe._ _
