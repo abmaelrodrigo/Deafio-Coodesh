@@ -76,8 +76,8 @@ Cenário 1.7 – Validar o Footer
 
 **Ciclo 2 – Validar o login, busca e exibição de vagas**
 Cenário 2.1 – Validar o cadastro de novo usuário
-    • Validar a criação de usuário do Login com dados inválidos
-    • Validar a criação de usuário do Login com dados válidos
+    • Validar o não cadastro de usuário com dados inválidos
+    • Validar o cadastro de usuário com dados válidos
 
 Cenário 2.2 – Validar o Login
     • Validar a realização do Login com dados inválidos
